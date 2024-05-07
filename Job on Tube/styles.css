@@ -1,0 +1,272 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin: 20px;
+}
+
+fieldset {
+  margin: 20px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgb(25, 3, 31); 
+}
+
+textarea {
+  width: 100%;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgb(25, 3, 31); /* Original button background color */
+  color: #fff; /* Original button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3617a3; /* Original button hover color */
+}
+
+
+header {
+  background-color: rgb(25, 3, 31); 
+  color: #FFFFFF; 
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 20px;
+}
+
+header img {
+  max-width: 30%;
+  height: auto;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main-nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+#main-nav button {
+  display: none;
+}
+
+.hero1 {
+  position: relative;
+}
+
+.hero1 h1 {
+  font-style: italic; /* Italicize the text */
+  font-family:'Times New Roman', Times, serif;
+}
+
+.hero1 img {
+  width: 100%;
+}
+
+.hero h1 {
+  background-color: rgba(127, 255, 212, 0.7);
+  color: #333;
+  padding: 10px;
+  margin-bottom: 30px; /* Add some spacing between company name and article */
+}
+
+.content1 {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  background-color: rgba(255, 255, 255, 0.8); /* Set background color with opacity */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.content1 h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(25, 3, 31);
+}
+
+.content1 p {
+  font-size: 18px;
+  color: #333;
+}
+  
+
+.btn {
+  background-color: rgb(25, 3, 31); 
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Padding around text */
+  text-decoration: none;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.btn:hover {
+  background-color: #3617a3; /* Darker orange on hover */
+}
+
+footer {
+  background-color: rgb(25, 3, 31);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.sociallinks {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.sociallinks a img {
+  width: 30px;
+  height: auto;
+}
+
+h4 {
+  color: red;
+}
+
+h2 {
+  font-size: 24px;
+  color: red;
+  text-align: center;
+}
+
+.category-toggle {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.toggle-content {
+  display: none;
+}
+
+.tick-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.tick-box label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.tick-box input[type="radio"] {
+  margin-right: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+/* CSS for mobile view */
+@media (max-width: 768px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #main-nav a {
+    display: none;
+  }
+
+  #main-nav button {
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  #main-nav button:hover {
+    background-color: #555;
+  }
+  /* CSS for show class */
+  .show {
+    display: block !important;
+  }
+}
+
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* CSS for Preview Section */
+#preview-section {
+  margin-top: 20px;
+}
+
+/* CSS for Title */
+#preview-section h2 {
+  font-size: 24px;
+  color: red;
+  text-align: center;
+}
+
+/* CSS for Preview Items */
+#preview-section p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* CSS for Edit Links */
+#preview-section a {
+  margin-left: 10px;
+  color: #00FF00;
+  text-decoration: none;
+}
+
+#preview-section a:hover {
+  text-decoration: underline;
+}

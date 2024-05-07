@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="images/jotlogo.jpg" alt="Logo"></a>
+    <nav id="main-nav">
+      <button id="mobile-menu-toggle">Menu</button>
+      <a href="index.html">Homepage</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+        
+    </nav>
+  </header>
+  
+  <main>
+    <div id="successMessage" style="display: none; text-align: center; color: green;">Message submitted successfully!</div>
+    <h2 style="color: rgb(209, 23, 54); text-align: center;">Contact Us</h2>
+    <form action="submit.php" method="post">
+        <div class="form-group">
+            <label for="name">Your Name or Company Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+    
+        <button type="submit">Submit</button>
+    </form>
+    
+</main>
+
+  
+
+  <footer>
+    <p>©2024 🌴 All Rights Reseved 🌴 Job on Tube</p>
+    <nav class="sociallinks">
+        <a href="https://facebook.com/storyblocksfb" target="_blank">
+            <img src="images/facebok.jpeg" alt="Facebook">
+        </a>
+        <a href="https://youtube.com/@storyblocksvlog?si=3c881f63Jyof3lVv" target="_blank">
+            <img src="images/youtube.png" alt="Twitter">
+        </a>
+        <a href="https://x.com/storyblocksvlog?t=73W3YVCWzcWNntM9WR3QEA&s=09" target="_blank">
+            <img src="images/xlogo.png" alt="Instagram">
+        </a>
+    </nav>
+
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // JavaScript for mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      var mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      var navLinks = document.querySelectorAll('#main-nav a');
+
+      mobileMenuToggle.addEventListener('click', function() {
+        navLinks.forEach(function(link) {
+          link.classList.toggle('show');
+        });
+      });
+    });
+
+    $(document).ready(function() {
+      // Check if the success parameter exists in the URL
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('status') && urlParams.get('status') === 'success') {
+          // If success parameter is true, show the success message
+          $('#successMessage').show();
+      }
+    });
+  </script>
+
+</body>
+</html>
+
