@@ -4,6 +4,7 @@ body {
 
 .container {
   margin: 20px;
+  padding-top: 20px;
 }
 
 fieldset {
@@ -29,15 +30,15 @@ textarea {
 
 button {
   padding: 10px 20px;
-  background-color: rgb(25, 3, 31); /* Original button background color */
-  color: #fff; /* Original button text color */
+  background-color: rgb(25, 3, 31); 
+  color: #fff; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #3617a3; /* Original button hover color */
+  background-color: #3617a3; 
 }
 
 
@@ -68,6 +69,10 @@ header img {
   color: white;
 }
 
+#main-nav a:hover {
+  background-color: #555;
+}
+
 #main-nav button {
   display: none;
 }
@@ -77,7 +82,7 @@ header img {
 }
 
 .hero1 h1 {
-  font-style: italic; /* Italicize the text */
+  font-style: italic; 
   font-family:'Times New Roman', Times, serif;
 }
 
@@ -89,14 +94,14 @@ header img {
   background-color: rgba(127, 255, 212, 0.7);
   color: #333;
   padding: 10px;
-  margin-bottom: 30px; /* Add some spacing between company name and article */
+  margin-bottom: 30px; 
 }
 
 .content1 {
   position: absolute;
   top: 10px; 
   right: 10px; 
-  background-color: rgba(255, 255, 255, 0.8); /* Set background color with opacity */
+  background-color: rgba(255, 255, 255, 0.8); 
   padding: 20px;
   border-radius: 10px;
 }
@@ -115,15 +120,15 @@ header img {
 
 .btn {
   background-color: rgb(25, 3, 31); 
-  color: #fff; /* White text color */
-  padding: 10px 20px; /* Padding around text */
+  color: #fff; 
+  padding: 10px 20px; 
   text-decoration: none;
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s; /* Smooth color transition */
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
 }
 
 .btn:hover {
-  background-color: #3617a3; /* Darker orange on hover */
+  background-color: #3617a3; 
 }
 
 footer {
@@ -181,36 +186,22 @@ h2 {
 
 .button-container {
   display: flex;
-  justify-content: flex-end; /* Align items to the right */
+  justify-content: flex-start; 
 }
 
-/* CSS for mobile view */
-@media (max-width: 768px) {
-  #main-nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.about {
+  width: 60%; 
+  margin: 0 auto; 
+  text-align: center; 
+  padding: 20px; 
+}
 
-  #main-nav a {
-    display: none;
-  }
+.about h2 {
+  margin-bottom: 20px; 
+}
 
-  #main-nav button {
-    display: block;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-
-  #main-nav button:hover {
-    background-color: #555;
-  }
-  /* CSS for show class */
-  .show {
-    display: block !important;
-  }
+.about p {
+  line-height: 1.6; 
 }
 
 main {
@@ -242,6 +233,10 @@ textarea {
   box-sizing: border-box;
 }
 
+.terms {
+  padding: 50px;
+}
+
 /* CSS for Preview Section */
 #preview-section {
   margin-top: 20px;
@@ -250,7 +245,7 @@ textarea {
 /* CSS for Title */
 #preview-section h2 {
   font-size: 24px;
-  color: red;
+  color: #00FF00;
   text-align: center;
 }
 
@@ -270,3 +265,34 @@ textarea {
 #preview-section a:hover {
   text-decoration: underline;
 }
+
+
+/* CSS for mobile view */
+@media (max-width: 768px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #main-nav a {
+    display: none;
+  }
+
+  #main-nav button {
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  #main-nav button:hover {
+    background-color: #555;
+  }
+  /* CSS for show class */
+  .show {
+    display: block !important;
+  }
+}
+
