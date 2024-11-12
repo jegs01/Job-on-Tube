@@ -5,7 +5,7 @@ This repository contains the development files for **[JobOnTube](https://jobontu
 
 **JobOnTube** is built to facilitate the job listing process by allowing companies to submit remote job listings.
 
-### Key Features
+### Key Feature
 
 - **Remote Job Listings**: Companies can submit fully remote job opportunities.
 
